@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .header {
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: black;
+    }
+
+    .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .colomn {
+        float: left;
+        padding: 10px;
+    }
+
+    .colomn.side {
+        width: 25%;
+    }
+
+    .colomn.middle {
+        width: 50%;
+    }
+
+    .row::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    @media screen and (max-width:600px) {
+
+        .colomn.side,
+        .colomn.middle {
+            width: 100%;
+        }
+    }
+
+    .footer {
+        background-color: #f1f1f1;
+        padding: 10px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="header">HEADER</div>
+    <div class="topnav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+    <div class="row">
+        <div class="colomn side">
+            <h2>side</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id doloremque consequatur recusandae modi
+                adipisci, perspiciatis possimus ut vitae harum voluptas beatae blanditiis provident qui laborum. Ea
+                magni aperiam quidem dicta.
+            </p>
+        </div>
+        <div class="colomn middle">
+            <h2>main konten</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptate officia quasi fuga quos rerum
+                reiciendis blanditiis sint architecto dignissimos. Rerum nihil cupiditate minima quas nulla labore optio
+                est eum.</p>
+        </div>
+        <div class="colomn side">
+            <h2>side</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, beatae ratione. Laboriosam aliquid,
+                adipisci cupiditate, quia dolorum officia asperiores ut, accusantium illo sunt ipsam voluptatum
+                doloremque optio! Temporibus, fugit veritatis?</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>footer </p>
+    </div>
+</body>
+
+</html>
